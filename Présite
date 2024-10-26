@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeuDinheiroExtra</title>
+    <style>
+        /* Configurações gerais */
+        body {
+            background-color: #1b1b1b;
+            color: #f1f1f1;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        
+        /* Cabeçalho */
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            color: #8fbc8f; /* Verde musgo */
+        }
+        
+        /* Barra de navegação */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        nav a {
+            color: #8fbc8f;
+            text-decoration: none;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+        
+        nav a:hover {
+            color: #f1f1f1;
+        }
+        
+        /* Seção Home */
+        .home {
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .home h2 {
+            color: #8fbc8f;
+            margin-bottom: 20px;
+        }
+        
+        .home p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Seção de produtos */
+        .produtos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 40px;
+        }
+        
+        .produto {
+            background-color: #333;
+            border: 1px solid #8fbc8f;
+            border-radius: 8px;
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .produto img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+        
+        .botao {
+            background-color: #8fbc8f;
+            color: #1b1b1b;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .botao:hover {
+            background-color: #a2d9a2;
+        }
+
+        /* Imagens laterais */
+        .imagens-laterais {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            position: relative;
+        }
+        
+        .imagens-laterais img {
+            width: 400px; /* Imagens maiores nos cantos */
+            border-radius: 8px;
+        }
+
+        /* Texto entre as imagens */
+        .texto-neon {
+            position: absolute;
+            top: 50%; /* Centraliza verticalmente */
+            left: 50%; /* Centraliza horizontalmente */
+            transform: translate(-50%, -50%); /* Ajusta a posição */
+            color: white;
+            font-size: 2em;
+            text-shadow: 
+                0 0 5px #8fbc8f, 
+                0 0 10px #8fbc8f, 
+                0 0 15px #8fbc8f; /* Efeito neon */
+            text-align: center;
+        }
+
+        /* Seção Contato */
+        .contato {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .whatsapp-logo {
+            width: 40px; /* Imagem do WhatsApp menor */
+            vertical-align: middle;
+        }
+
+        .numero {
+            font-size: 1.5em;
+            color: #8fbc8f;
+            text-shadow: 0 0 5px #8fbc8f; /* Brilho */
+            cursor: pointer;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .numero:hover {
+            text-shadow: 0 0 10px #8fbc8f; /* Aumentar o brilho ao passar o mouse */
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #2c3e50;
+            color: #f1f1f1;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho e Logo -->
+    <header>
+        <h1>SeuDinheiroExtra 💸</h1>
+        <nav>
+            <a href="#" onclick="scrollToSection('home')">Home</a>
+            <a href="#" onclick="scrollToSection('produtos')">Produtos</a>
+            <a href="#" onclick="scrollToSection('sobre')">Sobre</a>
+            <a href="#" onclick="scrollToSection('contato')">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Seção Home -->
+    <section class="home" id="home">
+        <h2>Bem-vindo ao SeuDinheiroExtra</h2>
+        <p>**SeuDinheiroExtra** é uma plataforma inovadora e prática, dedicada a ajudar pessoas a transformarem seus conhecimentos e habilidades em uma fonte confiável de renda extra. Com conteúdos exclusivos, ferramentas práticas e estratégias testadas, o site oferece um caminho simplificado para quem deseja complementar a renda, conquistar estabilidade financeira e alcançar suas metas econômicas. Focado em resultados, **SeuDinheiroExtra** combina uma abordagem direta e de fácil entendimento, ideal para iniciantes e profissionais. O site é o destino perfeito para quem busca independência financeira e maneiras sustentáveis de gerar uma renda adicional, sem abrir mão do que mais importa.</p>
+        <p>Além disso, a plataforma apresenta cursos, e-books e consultorias especializadas que ensinam desde técnicas de vendas e marketing digital até métodos de planejamento financeiro e oportunidades de investimento.</p>
+    </section>
+
+    <!-- Seção de Produtos -->
+    <section class="produtos" id="produtos">
+        <div class="produto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAFdC0i94WOMxt4iV_e4wI54uI-4C7sVQpog&s" alt="Aprenda a Ter Mais de 20 Clientes no WhatsApp">
+            <h2>Aprenda a Ter Mais de 20 Clientes no WhatsApp</h2>
+            <p>Aprenda a atrair de 10 a 20 clientes por dia! Fale no WhatsApp e descubra o método agora de como atrair clientes.</p>
+            <a href="https://pay.kiwify.com.br/pZc1DE1" target="_blank">
+                <button class="botao">Comprar</button>
+            </a>
+        </div>
+        <div class="produto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUwB9c18T204I3TK6wI52EU13x7usQ7kHjyw&s" alt="1000 Projetos Pronto Sobre Medidas">
+            <h2>1000 Projetos Pronto Sobre Medidas</h2>
+            <p>Aumenta seu faturamento 10 vezes mais no seu negócio vendendo projetos prontos para os clientes mais que satisfeitos.</p>
+            <a href="https://pay.kiwify.com.br/9JNKrd3" target="_blank">
+                <button class="botao">Comprar</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Imagens Laterais com Texto -->
+    <div class="imagens-laterais">
+        <img src="https://i.ytimg.com/vi/b1Lc7YwVm60/mqdefault.jpg" alt="Imagem Lateral 1">
+        <div class="texto-neon">TEMPO É DINHEIRO SE VOCÊ QUERER</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMupwup11BS5PwDnLzewMNHJboghXO35UV2g&s" alt="Imagem Lateral 2">
+    </div>
+
+    <!-- Seção Contato -->
+    <section class="contato" id="contato">
+        <img class="whatsapp-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+        <span class="numero" onclick="copyToClipboard()">(48 99657-5714)</span>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section class="sobre" id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Bem-vindo ao SeuDinheiroExtra! Somos uma plataforma dedicada a transformar o conhecimento e as habilidades das pessoas em oportunidades reais de renda extra. Nossa missão é fornecer recursos acessíveis e práticos para ajudar nossos usuários a alcançar sua independência financeira.</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 SeuDinheiroExtra. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            const section = document.getElementById(id);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function copyToClipboard() {
+            const whatsappNumber = '(48 99657-5714)';
+            navigator.clipboard.writeText(whatsappNumber).then(() => {
+                alert('Número copiado para a área de transferência: ' + whatsappNumber);
+            });
+        }
+    </script>
+</body>
+</html>
